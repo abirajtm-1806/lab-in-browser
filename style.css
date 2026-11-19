@@ -1,31 +1,47 @@
 body {
   padding: 25px;
   font-family: Arial, sans-serif;
-  background: #f5f6fa;
+  background: #f9ffa8;
 }
 
 .title {
-  color: #5C6AC4;
+  color: #001efffd;
+}
+
+h2 {
+  color: #5c6ce3;
+}
+
+.semester-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
 
 section {
-  margin: 16px 0;
+  margin: 0;
   padding: 16px 20px;
-  border: 1px solid #d7daea;
-  background: #fff;
+  border: 1px solid #ffffff;
+  background: #ab95f4;
 }
 
 section h3 {
   margin-top: 0;
-  color: #404b8c;
+  color: #efff92;
+}
+
+@media (max-width: 650px) {
+  .semester-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 button {
   height: 40px;
   width: 300px;
   padding: 0 16px;
-  background-color: #5C6AC4;
-  color: #fff;
+  background-color: #efff92;
+  color: #3230db;
   border: none;
   border-radius: 6px;
   margin: 0 8px 8px 0;
